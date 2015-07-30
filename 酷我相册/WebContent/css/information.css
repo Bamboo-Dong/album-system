@@ -1,0 +1,332 @@
+
+/* ------- This is the CSS Reset ------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr,
+th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu,
+nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a:link,a:visited,a:hover,a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ------- HTML5 display-role reset for older browsers ------- */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* all
+---------------------------------------*/
+body {
+	background-color: #e5e5e5;
+}
+header {
+	background-color: #474747;
+}
+.intro {
+	background-color: #fff;
+	margin: 1em 3em;
+	border: 2px solid #d6d6d6;
+}
+.content {
+	background-color: #fff;
+	margin: 1em 3em;
+	border: 2px solid #d6d6d6;
+}
+
+/* header
+---------------------------------------*/
+.htpic {
+	width: 10%;
+	margin-left: 5%;
+}
+header div {
+	float: right;
+	margin-right: 10%;
+}
+.account {
+	color: #bbb;
+	vertical-align: .4em;
+	padding: 1em;
+	background: url(../pics/samll.jpg) top top repeat;
+}
+/* main ----intro
+---------------------------------------*/
+.intro {
+	position: relative;
+}
+/* first-intro */
+.first-intro {
+	float: left;
+	margin: 1em;
+}
+
+.first-intro ul {
+	margin: .5em 2em;
+}
+.first-intro li {
+	display: inline-block;
+}
+.first-intro li:first-child {
+	padding-right: 1em;
+	border-right: 1px solid #eee;
+}
+.first-intro a {
+	font-weight: bold;
+	margin-left: .5em;
+}
+/* second-intro */
+.second-intro {
+	float: left;
+	margin: 4em 1em;
+}
+.second-intro span:first-child {
+	font: 1.2em/1 Verdana, Helvetica  bold;
+}
+.second-intro ul {
+	padding: 1em 15em 1em 0;
+	border-bottom: 1px solid #d6d6d6;
+}
+.second-intro li {
+	display: inline-block;
+	padding: 0 1em;
+	border-left: 1px dotted #000;
+}
+.second-intro li:first-child {
+	padding-left: 0;
+	border-left: none;
+}
+.signature{
+	display: inline-block;
+	font-size: .8em;
+	color: #959595;
+	margin: 1em 0;
+}
+/* third-intro */
+.third-intro {
+	position: absolute;
+	display: none;
+	top: 1em;
+	right: 1em;
+}
+.intro:hover .third-intro {
+	display: block;
+}
+
+/* content 
+---------------------------------*/
+nav li {
+	display: inline-block;
+	background-color: #eee;
+	padding: 1em 4em;
+}
+nav .special {
+	background-color: #d92a24;
+	color: #fff;
+}
+
+.ct {
+	margin: 1em 2em;
+	padding: 1em 0;
+	border-bottom: 1px solid #ddd;
+}
+.ct li {
+	display: inline-block;
+	padding: 0 1em;
+	border-left: 1px solid #ddd;
+}
+.ct li:first-child {
+	border-left: none;
+}
+.ct span {
+	padding: .5em 1em;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #eee;
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: .5em 1em;
+    overflow: hidden;
+    margin-bottom: -.6em;
+}
+.file input {
+    position: absolute;
+    font-size: 1.5em;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover,
+.ct span:hover {
+    background: #ddd;
+    border-color: #ccc;
+    color: #fff;
+}
+.picture {
+	display: inline-block;
+	background-color: #ddd;
+	padding: 1em 1em 2em 1em;
+	margin: 1em;
+}
+.picture span {
+	display: block;
+	text-align: center;
+	margin-top: 1em;
+}
+
+
+
+
+
+/* create album 
+-----------------------------------*/
+.background {
+	display: none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	background:-moz-radial-gradient(50% 50%, #fff, #000);/*gradient for firefox*/
+	background:-webkit-radial-gradient(50% 50%, #fff, #000);/*new gradient for webkit */
+	background:-webkit-gradient(radial, 0 50%, 0 50%, from(#fff), to(#000));/*the old grandient for webkit*/
+	opacity:0.5;
+	filter:Alpha(opacity=50);
+}
+#form {
+	display: none;
+	position:fixed;
+	border: 1px solid #ccc;		
+	background-color:white;
+	top:30%;
+	left:30%;
+	width: auto;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	box-shadow:0 5px 27px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 5px 27px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 5px 27px rgba(0,0,0,0.3);
+}
+/* form header */
+.fh {
+	position: relative;
+	background-color: #ddd;
+}
+.fh h1 {
+	display: inline-block;
+	margin: .5em;
+	font-weight: bold;
+}
+.fh img {
+	width: 80%;
+}
+.fh a {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+/* form content */
+form {
+	margin: 1em;
+}
+label {
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px 6px;
+	width: 5em;
+	text-align: right;
+	vertical-align: top;
+}
+.row {
+	margin-bottom: 1em;
+}
+/*:::: radios ::::*/
+.radios label {
+	padding: 0;
+	text-align: left;
+	width: auto;
+}
+.radios legend {
+	float: left;
+}
+.radios .row {
+	display: inline-block;
+	margin: 0;
+}
+/*:::: btn ::::*/
+.btn input {
+	cursor: pointer;
+	font-size: 1em;
+	background-color: #4ed9ed;
+	padding: .2em .4em;
+	border-radius: 5px;
+}
+.btn span {
+	cursor: pointer;
+	border: 1px solid #aaa;
+	background-color: #eee;
+	padding: .35em;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+/* html5boilerplate.com Clearfix
+--------------------------------- */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}

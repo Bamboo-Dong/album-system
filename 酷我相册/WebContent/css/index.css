@@ -1,0 +1,272 @@
+/* normalize.css v2.1.2 | MIT License | git.io/normalize
+---------------------------------------------------------------- */
+
+/* ::: HTML5 display definitions ::: */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* ::: Base ::: */
+/**
+ * Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ::: Typography ::: */
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/* ::: Embedded content ::: */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+/* -- end of abridged normalize -- */
+
+/* ALL
+------------------------------*/
+body {
+	font: 100%/1.2 "Times New Roman",Georgia,Serif;
+	background-color: #eee;
+  margin: 0 auto;
+}
+.inblock {
+  display: inline-block;
+}
+.first-main {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+.div3 {
+  margin: 3% 7%;
+  padding-top: 3%;
+  border-top: 2px solid #ddd;
+}
+.second-main {
+  max-width: 80%;
+  float: left;
+}
+aside {
+  float: left;
+}
+
+/* HEAD
+------------------------------*/
+.head {
+  background-color: #fff;
+  border-bottom: 1px solid #b8b8b8;
+  box-shadow: 0 0 .5em 0 #cfcfcf;
+}
+.titleimg {
+  max-width: 15%;
+  margin-left: 4em;
+}
+.search {
+  border: 0;
+}
+.nav {
+  border: 1px solid #000;
+  vertical-align: 1em;
+  margin-left: 10%;
+}
+.searchimg {
+  max-width: 10%;
+  margin-right: 0;
+}
+.info {
+  vertical-align: 1em;
+  margin-left: 20%;
+}
+.info a:hover {
+  text-decoration: none;
+}
+.sign {
+  padding: .5em 1em;
+  margin-right: .5em;
+  border-radius: 5px;
+  background-color: #d92a24;
+}
+.register {
+  padding-left: 1em;
+  border-left: 1px solid #e8e8e8;
+}
+/*first-main
+----------------------------------------*/
+.pic {
+  position: relative;
+  float: left;
+  padding-right: 0;
+}
+.top-pic {
+  max-width: 80%;
+  padding: .1em;
+  box-shadow: 0 0 .15em .15em #a1a1a1;
+}
+.pic span{
+  filter:alpha(opacity=70); 
+  -moz-opacity:0.7; 
+  opacity:0.7; 
+  background: #555; 
+  margin-top: 40%; 
+  margin-left: -80.3%;
+  position: absolute; 
+  width: 80%;
+  height: 26%;
+}
+.pic font{ 
+  font-size:2em; 
+  font-weight:bold; 
+  color:#fff; 
+  position: absolute; 
+  margin-left: 2em;
+  margin-top: .5em;
+}
+/* fenlei */
+.fl {
+  float: left;
+  background-color: #fff;
+  width: 35%;
+  padding: 1em 1.5em;
+  border: 2px solid #ddd;
+}
+.flt {
+  display: block;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e6e6e6;
+}
+.flu {
+  padding: 0;
+}
+.flu li{
+  display: inline-block;
+  padding: 0 1em;
+  margin: .5em 0;
+  border-right: 1px dotted #c6c6c6;
+}
+/*second-main
+-------------------------------------*/
+.prompt {
+  margin: 1em;
+}
+.content {
+  margin: 1em 2em 3em 1em;
+  display: inline-block;
+}
+.main-pic:hover {
+  opacity: .75;
+}
+.description {
+  display: block;
+  margin-right: 0;
+}
+.load {
+  display: inline-block;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: .5em 10em;
+  margin-left: 20%;
+  font-weight: bold;
+}
+.load:hover {
+  background-color: #bbb;
+  color: #fff;
+}
+/*aside
+-------------------------------------*/
+aside {
+  border-left: 1px solid #ccc;
+  padding-left: 5%;
+}
+.section {
+  margin-bottom: 3em;
+}
+.aside-title {
+  border-bottom: 1px solid #000;
+  padding-bottom: 1em;
+}
+.aside-content {
+
+}
+.aside-content li {
+  margin: 1em 0;
+}
+/* footer
+------------------------------------*/
+footer {
+  background-color: #444;
+  color: #eee;
+}
+.foot {
+  display: inline-block;
+  margin: 0 20%;
+}
+.ftt {
+  font-size: 1.2em;
+}
+.ftu {
+  padding: 0;
+}
+.ftu li {
+  margin: .5em 0;
+}
+
+
+
+/* html5boilerplate.com Clearfix
+--------------------------------- */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
